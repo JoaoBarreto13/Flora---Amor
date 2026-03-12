@@ -33,8 +33,8 @@ Landing page moderna para uma floricultura artesanal, com **catálogo**, **carri
 
 ### Pré-requisitos
 
-- **Node.js** (LTS recomendado)
-- **npm** (ou seu gerenciador preferido, ajustando os comandos)
+- **Node.js**
+- **npm** 
 
 ### Instalação
 
@@ -64,20 +64,7 @@ Acesse `http://localhost:8080`.
 
 ---
 
-## 📜 Scripts
-
-```bash
-npm run dev        # servidor de desenvolvimento
-npm run build      # build de produção
-npm run preview    # pré-visualização do build
-npm run lint       # ESLint
-npm run test       # testes (Vitest)
-npm run test:watch # testes em watch mode
-```
-
----
-
-## 🗂 Estrutura (resumo)
+## 🗂 Estrutura 
 
 ```
 src/
@@ -90,13 +77,6 @@ src/
 ├── pages/           # Index, Catalog, NotFound
 └── main.tsx         # entry
 ```
-
----
-
-## 🔐 Segurança
-
-- **Nunca commite `.env`**. Este projeto já inclui regras no `.gitignore` para ignorar `.env` e `.env.*`.
-- Se você já tiver versionado um `.env` no passado, remova do índice do Git (`git rm --cached .env`) e gere novas chaves, se necessário.
 
 ---
 
