@@ -77,9 +77,3 @@ src/
 ├── pages/           # Index, Catalog, NotFound
 └── main.tsx         # entry
 ```
-
----
-
-## 📄 Licença
-
-Consulte o arquivo de licença do repositório (se aplicável).
