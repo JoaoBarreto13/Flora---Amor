@@ -1,79 +1,115 @@
 # Flora & Amor
 
-Landing page moderna para uma floricultura artesanal ficticia, com **catálogo**, **carrinho** e **checkout via WhatsApp**.
-
-![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Vite](https://img.shields.io/badge/Vite-5-purple) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3-teal) ![Supabase](https://img.shields.io/badge/Supabase-2-3ECF8E)
+Flora & Amor é uma landing page moderna para uma floricultura artesanal fictícia.  
+O projeto apresenta um catálogo de produtos, carrinho de compras e checkout simplificado via WhatsApp, com foco em experiência do usuário e interface responsiva.
 
 ---
 
-## Stack
+## Tecnologias
 
-| Tecnologia | Uso |
+| Tecnologia | Descrição |
 |---|---|
-| **React 18 + TypeScript** | UI |
-| **Vite** | Dev server e build |
-| **Tailwind CSS + shadcn/ui (Radix)** | Estilos e componentes |
-| **React Router** | Rotas SPA |
-| **Supabase** | Backend (Auth/DB/Storage, conforme uso no app) |
-| **TanStack Query** | Dados assíncronos e cache |
-| **Sonner** | Toasts |
-| **Vitest** | Testes |
+| React 18 + TypeScript | Desenvolvimento da interface |
+| Vite | Ambiente de desenvolvimento e build |
+| Tailwind CSS | Estilização da aplicação |
+| shadcn/ui (Radix UI) | Componentes de interface |
+| React Router | Gerenciamento de rotas |
+| Supabase | Backend (autenticação, banco de dados e storage) |
+| TanStack Query | Gerenciamento de dados assíncronos e cache |
+| Sonner | Sistema de notificações |
+| Vitest | Testes |
 
 ---
 
 ## Funcionalidades
 
-- **Animações & UI**: entrada por scroll (`useScrollAnimation`), parallax no Hero, contadores animados, skeleton em imagens e hover com elevação.
-- **Carrinho**: estado via `CartContext`, persistência em `localStorage`, drawer lateral e checkout gerando mensagem pronta para WhatsApp.
-- **Catálogo**: filtros combinados (categoria/ocasião/preço), contagem de resultados e reset de filtros quando necessário.
+### Catálogo
+- Listagem de produtos
+- Filtros por categoria, ocasião e preço
+- Contagem de resultados
+- Reset automático de filtros
+
+### Carrinho
+- Gerenciamento de estado com React Context
+- Persistência de dados com localStorage
+- Interface de carrinho em drawer lateral
+- Checkout gerando mensagem automática para WhatsApp
+
+### Interface
+- Animações de entrada por scroll
+- Parallax na seção hero
+- Contadores animados
+- Skeleton loading em imagens
+- Interações de hover
 
 ---
 
-## Começando
+## Instalação
 
 ### Pré-requisitos
 
-- **Node.js**
-- **npm** 
+- Node.js  
+- npm
 
-### Instalação
+### Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/flora-amor.git
+cd flora-amor
+```
+
+### Instalar dependências
 
 ```bash
 npm install
 ```
 
-### Variáveis de ambiente
+---
 
-Crie um arquivo `.env` na raiz (ou copie de `.env.example`) com:
+## Variáveis de Ambiente
 
-| Variável | Descrição |
-|---|---|
-| `VITE_SUPABASE_URL` | URL do projeto Supabase |
-| `VITE_SUPABASE_PUBLISHABLE_KEY` | Chave pública (anon) |
-| `VITE_SUPABASE_PROJECT_ID` | ID/Ref do projeto |
+Crie um arquivo `.env` na raiz do projeto:
 
-### Rodar em desenvolvimento
+```env
+VITE_SUPABASE_URL=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+VITE_SUPABASE_PROJECT_ID=
+```
 
-O dev server está configurado para a porta **8080**.
+---
+
+## Executando o Projeto
+
+O servidor de desenvolvimento está configurado para a porta **8080**.
 
 ```bash
 npm run dev
 ```
 
-Acesse `http://localhost:8080`.
+Acesse no navegador:
+
+```
+http://localhost:8080
+```
 
 ---
 
-## Estrutura 
+## Estrutura do Projeto
 
 ```
-src/
-├── assets/          # Imagens (hero, produtos)
-├── components/      # Componentes reutilizáveis
-│   └── ui/          # shadcn/ui
-├── contexts/        # CartContext
-├── hooks/           # hooks (scroll/count/mobile)
-├── lib/             # utilitários
-├── pages/           # Index, Catalog, NotFound
-└── main.tsx         # entry
+src
+├── assets
+├── components
+│   └── ui
+├── contexts
+├── hooks
+├── lib
+├── pages
+└── main.tsx
 ```
+
+---
+
+## Licença
+
+Este projeto foi desenvolvido para fins educacionais e de portfólio.
