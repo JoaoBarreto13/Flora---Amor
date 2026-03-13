@@ -1,12 +1,12 @@
-# 🌸 Flora & Amor
+# Flora & Amor
 
-Landing page moderna para uma floricultura artesanal, com **catálogo**, **carrinho** e **checkout via WhatsApp**.
+Landing page moderna para uma floricultura artesanal ficticia, com **catálogo**, **carrinho** e **checkout via WhatsApp**.
 
 ![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Vite](https://img.shields.io/badge/Vite-5-purple) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3-teal) ![Supabase](https://img.shields.io/badge/Supabase-2-3ECF8E)
 
 ---
 
-## 🛠 Stack
+## Stack
 
 | Tecnologia | Uso |
 |---|---|
@@ -21,7 +21,7 @@ Landing page moderna para uma floricultura artesanal, com **catálogo**, **carri
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Animações & UI**: entrada por scroll (`useScrollAnimation`), parallax no Hero, contadores animados, skeleton em imagens e hover com elevação.
 - **Carrinho**: estado via `CartContext`, persistência em `localStorage`, drawer lateral e checkout gerando mensagem pronta para WhatsApp.
@@ -29,7 +29,7 @@ Landing page moderna para uma floricultura artesanal, com **catálogo**, **carri
 
 ---
 
-## 🚀 Começando
+## Começando
 
 ### Pré-requisitos
 
@@ -64,7 +64,7 @@ Acesse `http://localhost:8080`.
 
 ---
 
-## 🗂 Estrutura 
+## Estrutura 
 
 ```
 src/
